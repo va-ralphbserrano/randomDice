@@ -27,7 +27,7 @@ function rollDice() {
 
     // Update the text content to show the values of the rolled dice
     const totalValue = values.reduce((acc, cur) => acc + cur, 0);
-    diceResult.textContent = `dice: ${values.join(', ')}, total: ${totalValue}`;
+    diceResult.innerHTML = `dice: ${values.join(', ')}<br>total: ${totalValue}`;
     // Update the inner HTML to display the images of the rolled dice
     diceImages.innerHTML = images.join('');
 
