@@ -1,0 +1,93 @@
+/**
+ * Styles for the dice roller application
+ * @author Your Name
+ */
+
+/**
+ * Main container element
+ * - Centers the content
+ * - Sets the font family, size, and weight
+ * - Adds a shadow and border radius
+ */
+#container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+/**
+ * Button element
+ * - Sets the font size, padding, border radius, border, background color, and color
+ * - Sets the cursor to a pointer
+ * - Transitions the background color on hover
+ * - Adds a box shadow
+ */
+button {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(233, 100%, 50%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/**
+ * Button hover style
+ * - Changes the background color
+ */
+button:hover {
+  background-color: hsl(233, 100%, 60%);
+}
+
+/**
+ * Button active style
+ * - Changes the background color
+ */
+button:active {
+  background-color: hsl(233, 100%, 70%);
+}
+
+/**
+ * Input element
+ * - Sets the font size, width, and text alignment
+ * - Sets the font weight to bold
+ * - Adds a border radius
+ */
+input {
+  font-size: 2rem;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/**
+ * Dice result element
+ * - Adds margin around the element
+ * - Adds a border radius
+ */
+#diceResult {
+  margin: 25px;
+  border-radius: 10px;
+}
+
+/**
+ * Dice images container
+ * - Sets the width of each image
+ * - Adds margin around each image
+ * - Adds a border radius
+ */
+#diceImages img {
+  width: 150px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+

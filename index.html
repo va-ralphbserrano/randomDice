@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+    This is the main entry point for the application.
+    It uses the script.js file to handle the logic for rolling the dice and
+    displaying the results.
+-->
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <h1>Dice Roller</h1>
+        <!--
+            This is the input for the number of dice to roll.
+            The value attribute sets the default value to 1.
+            The min and max attributes set the range of values to 1-10.
+        -->
+        <label for="numOfDice"># of dice:</label>
+        <input type="number" id="numOfDice" value="1" min="1" max="10" class="input">
+        <!--
+            This is the button that triggers the rollDice function when clicked.
+            The onclick attribute sets up the event listener.
+        -->
+        <button onclick="rollDice()" class="button">Roll Dice</button>
+        <!--
+            This is the div that will display the result of the dice roll.
+            The id attribute sets the id to "diceResult" so that it can be
+            accessed in the script.js file.
+        -->
+        <div id="diceResult" class="result"></div>
+        <!--
+            This is the div that will display the images of the dice.
+            The id attribute sets the id to "diceImages" so that it can be
+            accessed in the script.js file.
+        -->
+        <div id="diceImages" class="images"></div>
+    </div>
+    <!--
+        This is the script tag that loads the script.js file.
+        The src attribute sets the source of the script to the script.js file.
+    -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
